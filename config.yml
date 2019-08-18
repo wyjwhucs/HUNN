@@ -1,0 +1,20 @@
+word_embeddings:
+  # 
+  word2vec:
+    path: D:/DataMining/Word2Vec/GoogleNews-vectors-negative300.bin
+    binary: True
+  glove:
+    path: D:/DataMining/glove.6B/glove.6B.300d.txt
+    length: 400000
+
+datasets:
+  # 
+  default: MR
+  TEST:
+
+  MR:
+  # 电影评论数据集，包含正负2类:
+    positive_data_file:
+      path: "D:/DataMining/TC/MR/rt-polarity.pos"
+    negative_data_file:
+      path: "D:/DataMining/TC/MR/rt-polarity.neg"
